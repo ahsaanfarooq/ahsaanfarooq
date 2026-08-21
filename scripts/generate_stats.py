@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate self-hosted GitHub stats SVGs — replaces the third-party
+"""Generate self-hosted GitHub stats SVGs - replaces the third-party
 github-readme-stats.vercel.app widget with graphics this repo draws itself.
 
 Stdlib only (urllib for the GraphQL API), matching the guide's approach so
@@ -7,7 +7,7 @@ there's nothing to break in CI. Run by .github/workflows/refresh-stats.yml.
 
 Two determinism traps this avoids (see guide):
   1. The contribution window is pinned to whole UTC days (00:00:00 -> 23:59:59),
-     not "the past year from right now" — otherwise two runs minutes apart
+     not "the past year from right now" - otherwise two runs minutes apart
      bucket days into different weeks and the sparkline shifts every night.
   2. Repos are filtered to `privacy: PUBLIC` only, so the numbers don't depend
      on whether the token running this can see private repos.
@@ -134,7 +134,7 @@ def main():
 
     os.makedirs("assets", exist_ok=True)
 
-    # ---- stats.svg: hero total + weekly sparkline (bars, per the guide — "columns are honest") ----
+    # ---- stats.svg: hero total + weekly sparkline (bars, per the guide - "columns are honest") ----
     W, H = 480, 160
     body = text(20, 34, "contributions, last 365 days", size=12, fill="#8b949e")
     body += text(20, 70, f"{total:,}", size=34, fill="#58a6ff", weight="bold")
