@@ -57,8 +57,13 @@ I specialize in **production automation systems** — things that run 24/7 on re
 
 ## 📊 GitHub Stats
 
+_Self-hosted — generated nightly by this repo's own GitHub Action, no third-party widget._
+
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ahsaanfarooq&show_icons=true&theme=dark&hide_border=true&count_private=true" alt="GitHub Stats" />
+  <img src="assets/stats.svg" alt="Contribution stats" /><br/>
+  <img src="assets/streak.svg" alt="Streaks" /><br/>
+  <img src="assets/langs.svg" alt="Top languages" /><br/>
+  <img src="assets/year.svg" alt="Contribution heatmap" />
 </p>
 
 ---
